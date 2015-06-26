@@ -32,12 +32,12 @@
                 }
             };
 
-            // if ($('header_avatar')) {
+            if ($('header_avatar')) {
                 $('header_avatar').observe('click', function (e) {
                     $('body').toggleClassName('mobile_rightmenu_visible');
                     e.preventDefault();
                 });
-            // }
+            }
             Event.observe(window, 'resize', TBG.Core._mobileMenuMover);
             TBG.Core._mobileMenuMover();
         });
